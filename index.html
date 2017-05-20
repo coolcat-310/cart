@@ -12,6 +12,7 @@
 <div class="container">
     <form class="add-to-cart" action="cart.html" method="post">
         <div>
+            <div id="itemId" class="hide">123</div>
             <div id="style-1" class="style">11111</div>
             <div id="color">blue</div>
             <div id="price" class="price">19.99</div>
@@ -19,8 +20,14 @@
             <label for="qty-1">Quantity</label>
             <input type="text" name="qty-1" id="qty-1" class="qty" value="1" />
         </div>
-        <p><input type="submit" value="Add to cart" class="btn" /></p>
+        <p><input type="submit" value="Add to cart" class="btn add" /></p>
+        <p><input type="submit" value="Clear all" class="btn erase" /></p>
+        <p><input type="submit" value="Erase particular Item" class="btn eraseCurrent" /></p>
     </form>
+</div>
+
+<div class="container">
+    <h1 id="readStyle"></h1>
 </div>
 
 <script src="script.js"></script>
